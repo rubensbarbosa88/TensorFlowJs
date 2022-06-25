@@ -12,7 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "@tensorflow/tfjs": "^3.18.0",
-    "@tensorflow/tfjs-backend-wasm": "^3.18.0"
+    "@tensorflow/tfjs-backend-wasm": "^3.18.0",
+    "@tensorflow/tfjs-node": "^3.18.0"
   },
   "devDependencies": {
     "buffer": "^6.0.3",
