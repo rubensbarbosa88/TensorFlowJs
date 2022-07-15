@@ -22,6 +22,6 @@
     "process": "^0.11.10"
   },
   "staticFiles": {
-    "staticPath": "./static_tfjs"
+    "staticPath": "src/assets"
   }
 }
