@@ -30,17 +30,27 @@ import * as model from './model'
 // multiplier.print()
 // console.log(multiplier.dtype)
 
-// Tensor Operations
-// aditions
-// const income_source1 = tf.tensor1d([100, 200, 300, 150])
-// const income_source2 = tf.tensor1d([50, 70, 30, 20])
-// const total_income =  tf.add(income_source1, income_source2)
-// const total_income = income_source1.add(income_source2)
-// total_income.print()
+/*
+tf.tidy(() => {
+    // Tensor Operations
+    // aditions
+    const income_source1 = tf.tensor1d([100, 200, 300, 150])
+    const income_source2 = tf.tensor1d([50, 70, 30, 20])
+    // const total_income =  tf.add(income_source1, income_source2)
+    const total_income = tf.keep(income_source1.add(income_source2))
+    total_income.print()
 
-//variables
+    //variables
+    const var_1 = tf.variable(income_source1)
+    console.log(`var 1 before set ${var_1}`)
+    var_1.assign(income_source2)
+    console.log(`var 1 before assignment ${var_1}`)
 
-
+    // var_1.dispose()
+    // total_income.dispose()
+    console.log(tf.memory().numTensors)
+})
+*/
 const init = async () => {
   await tf.ready()
   model.train()

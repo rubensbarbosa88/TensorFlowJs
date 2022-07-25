@@ -13,7 +13,8 @@
   "dependencies": {
     "@tensorflow/tfjs": "^3.18.0",
     "@tensorflow/tfjs-backend-wasm": "^3.18.0",
-    "@tensorflow/tfjs-node": "^3.18.0"
+    "@tensorflow/tfjs-node": "^3.18.0",
+    "@tensorflow/tfjs-vis": "^1.5.1"
   },
   "devDependencies": {
     "buffer": "^6.0.3",

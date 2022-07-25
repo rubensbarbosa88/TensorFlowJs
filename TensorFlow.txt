@@ -1,0 +1,19 @@
+Formas de treinamento para textos:
+
+As maquinas sempre aprendem através de numeros,
+Por isso devemos usar o modelo VSM (Vector Space Model), para criar um vetor de numeros.
+
+Primeiro transformamos as palavras nos documentos em um array de strings,
+Depois contamos as palavras quantas vezes as palavras aparecem em cada documento, esse metodo é conhecido como TF (Term Frequency)
+
+Após isso, precisamos diferenciar as palavras raras das palavras comuns, então é usado a formula TF-IDF,
+Usando o DF (Document Frequency) para somar as quantas vezes as palavras aparecem, logo as palavras que aparecem mais
+nos documentos, são menos uteis, e as que aparecem menos são mais uteis/raras
+
+
+fomula IDF:
+
+N = numero de documentos (arrays)
+DF = Document Frquency (a soma das palavras)
+
+(N/DF) + 1
